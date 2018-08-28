@@ -1,4 +1,8 @@
-/home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/SimpleController.java
+/home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/service/SimpleService.java
+/home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/ws/HelloController.java
 /home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/App.java
-/home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/SimpleControllerImpl.java
-/home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/HelloController.java
+/home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/service/CalculadoraService.java
+/home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/service/impl/CalculadoraServiceImpl.java
+/home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/ws/CalculadoraController.java
+/home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/utils/ResultadoUtils.java
+/home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/service/impl/SimpleServiceImpl.java

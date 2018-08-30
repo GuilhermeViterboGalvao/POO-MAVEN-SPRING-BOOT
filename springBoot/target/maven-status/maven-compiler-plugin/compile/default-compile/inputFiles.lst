@@ -1,10 +1,13 @@
-/home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/service/SimpleService.java
+/home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/dto/CalculatorResponseDTO.java
 /home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/service/impl/HistoryServiceImpl.java
-/home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/service/exception/HistoryException.java
+/home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/service/ValidateCalculatorResponseDTOService.java
 /home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/service/impl/CalculatorServiceImpl.java
 /home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/App.java
-/home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/service/HistoryService.java
 /home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/service/CalculatorService.java
+/home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/service/SimpleService.java
+/home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/service/exception/CalculatorException.java
+/home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/service/impl/ValidateCalculatorResponseDTOServiceImpl.java
+/home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/service/HistoryService.java
 /home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/ws/HelloRestController.java
 /home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/ws/CalculatorRestController.java
 /home/guilherme/Downloads/poo/springBoot/src/main/java/br/curso/poo/springBoot/service/impl/SimpleServiceImpl.java

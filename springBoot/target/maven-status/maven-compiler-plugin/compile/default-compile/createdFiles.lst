@@ -1,8 +1,10 @@
 br/curso/poo/springBoot/App.class
-br/curso/poo/springBoot/utils/ResultadoUtils.class
 br/curso/poo/springBoot/service/SimpleService.class
-br/curso/poo/springBoot/ws/CalculadoraController.class
-br/curso/poo/springBoot/ws/HelloController.class
-br/curso/poo/springBoot/service/impl/CalculadoraServiceImpl.class
+br/curso/poo/springBoot/service/CalculatorService.class
+br/curso/poo/springBoot/service/impl/HistoryServiceImpl.class
+br/curso/poo/springBoot/ws/CalculatorRestController.class
+br/curso/poo/springBoot/service/HistoryService.class
+br/curso/poo/springBoot/ws/HelloRestController.class
+br/curso/poo/springBoot/service/exception/HistoryException.class
+br/curso/poo/springBoot/service/impl/CalculatorServiceImpl.class
 br/curso/poo/springBoot/service/impl/SimpleServiceImpl.class
-br/curso/poo/springBoot/service/CalculadoraService.class

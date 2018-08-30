@@ -1,6 +1,6 @@
 package br.curso.poo.springBoot.service;
 
-public interface CalculadoraService {
+public interface CalculatorService {
 
     double soma(double n1, double n2);
 

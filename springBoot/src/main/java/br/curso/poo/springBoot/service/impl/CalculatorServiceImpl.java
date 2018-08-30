@@ -1,59 +1,85 @@
 package br.curso.poo.springBoot.service.impl;
 
+import br.curso.poo.springBoot.dto.CalculatorResponseDTO;
 import br.curso.poo.springBoot.service.CalculatorService;
 import br.curso.poo.springBoot.service.HistoryService;
-import br.curso.poo.springBoot.service.exception.HistoryException;
+import br.curso.poo.springBoot.service.exception.CalculatorException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 
 @Service
 public class CalculatorServiceImpl implements CalculatorService {
 
+    private static final String SUM = "+";
+    private static final String SUBTRACTION = "-";
+    private static final String DIVISION = "/";
+    private static final String MULTIPLICATION = "*";
+
     @Autowired
     private HistoryService historyService;
 
     @Override
-    public double soma(double n1, double n2) {
-        double result = n1 + n2;
-        try {
-            historyService.add(String.format("%f + %f = %f", n1, n2, result));
-        } catch (HistoryException e) {
-            e.printStackTrace();
-        }
-        return result;
+    public CalculatorResponseDTO sum(double n1, double n2) {
+        return execute(n1, n2, SUM);
     }
 
     @Override
-    public double subtracao(double n1, double n2) {
-        double result = n1 - n2;
-        try {
-            historyService.add(String.format("%f - %f = %f", n1, n2, result));
-        } catch (HistoryException e) {
-            e.printStackTrace();
-        }
-        return result;
+    public CalculatorResponseDTO subtraction(double n1, double n2) {
+        return execute(n1, n2, SUBTRACTION);
     }
 
     @Override
-    public double divisao(double n1, double n2) {
-        double result = n1 / n2;
-        try {
-            historyService.add(String.format("%f / %f = %f", n1, n2, result));
-        } catch (HistoryException e) {
-            e.printStackTrace();
-        }
-        return result;
+    public CalculatorResponseDTO division(double n1, double n2) {
+        return execute(n1, n2, DIVISION);
     }
 
     @Override
-    public double multiplicacao(double n1, double n2) {
-        double result = n1 * n2;
-        try {
-            historyService.add(String.format("%f * %f = %f", n1, n2, result));
-        } catch (HistoryException e) {
-            e.printStackTrace();
+    public CalculatorResponseDTO multiplication(double n1, double n2) {
+        return execute(n1, n2, MULTIPLICATION);
+    }
+
+    private CalculatorResponseDTO execute(double n1, double n2, String operation) {
+        CalculatorResponseDTO dto = null;
+        if (operation.equals(SUM)) {
+            double result = n1 + n2;
+            dto = new CalculatorResponseDTO(
+                String.valueOf(n1),
+                String.valueOf(n2),
+                SUM,
+                String.valueOf(result)
+            );
+        } else if (operation.equals(SUBTRACTION)) {
+            double result = n1 - n2;
+            dto = new CalculatorResponseDTO(
+                String.valueOf(n1),
+                String.valueOf(n2),
+                SUBTRACTION,
+                String.valueOf(result)
+            );
+        } else if (operation.equals(DIVISION)) {
+            double result = n1 / n2;
+            dto = new CalculatorResponseDTO(
+                String.valueOf(n1),
+                String.valueOf(n2),
+                DIVISION,
+                String.valueOf(result)
+            );
+        } else if (operation.equals(MULTIPLICATION)) {
+            double result = n1 * n2;
+            dto = new CalculatorResponseDTO(
+                String.valueOf(n1),
+                String.valueOf(n2),
+                    MULTIPLICATION,
+                String.valueOf(result)
+            );
         }
-        return result;
+        if (dto != null) {
+            try {
+                historyService.add(dto);
+            } catch (CalculatorException e) {
+                e.printStackTrace();
+            }
+        }
+        return dto;
     }
 }

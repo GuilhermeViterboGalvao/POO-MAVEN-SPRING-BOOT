@@ -1,17 +1,18 @@
 package br.curso.poo.springBoot.service;
 
-import br.curso.poo.springBoot.service.exception.HistoryException;
+import br.curso.poo.springBoot.dto.CalculatorResponseDTO;
+import br.curso.poo.springBoot.service.exception.CalculatorException;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public interface HistoryService {
 
-    List<String> DB = new ArrayList<>();
+    List<CalculatorResponseDTO> DB = new ArrayList<>();
 
-    void add(String calculo) throws HistoryException;
+    void add(CalculatorResponseDTO dto) throws CalculatorException;
 
-    void remove(String calculo) throws HistoryException;
+    void remove(CalculatorResponseDTO dto) throws CalculatorException;
 
-    List<String> getHistory();
+    List<CalculatorResponseDTO> getHistory();
 }

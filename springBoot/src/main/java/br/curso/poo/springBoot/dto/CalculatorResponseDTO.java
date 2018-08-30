@@ -2,6 +2,8 @@ package br.curso.poo.springBoot.dto;
 
 public final class CalculatorResponseDTO {
 
+    public CalculatorResponseDTO() {}
+
     public CalculatorResponseDTO(
         String n1,
         String n2,
